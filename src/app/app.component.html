@@ -1,1 +1,11 @@
-<button mat-raised-button (click)="addSkill()"> Add new skill</button>
+<button mat-raised-button color="primary" (click)="addSkill()"> Add new skill</button>
+<angular-file-uploader
+      [config]="afuConfig">
+</angular-file-uploader>
+
+<!--Another apporach to file upload-->
+
+
+    <input type="file" (change)="onFileSelected($event)">
+    <br>
+    

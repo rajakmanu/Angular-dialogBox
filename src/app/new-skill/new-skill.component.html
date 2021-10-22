@@ -1,45 +1,20 @@
 <form>
-
     <div class="container">
-  
       <h1>Add Skills</h1>
-  
       <!-- <p>Please fill in this form to create an account.</p> -->
   
       <hr>
-  
-  
-  
       <label for="skills"><b>Skill Name</b></label>
-  
       <input type="text" placeholder="Enter your skill" name="skill" id="skill" required>
-  
-  
-        
       <label for="Techstack"><b>Techstack Name</b></label>
-  
-      <input type="text" placeholder="Enter the Techstack name" name="Techstack" id="Techstack" required>
-  
-  
-  
-     
-  
+      <input type="text" placeholder="Enter the Techstack name" name="Techstack" 
+      id="Techstack" required>
+      <!--File upload-->
+      <input type="file" class="file-upload" onchange="console.log(event.target.files)"> 
+      
       <hr>
-  
-  
-  
-     
-  
-      <div class="text-center">
-  
+    <div class="text-center">
       <button type="submit" class="btn btn-primary">Add</button>
-  
-      </div>
-  
     </div>
-  
-  
-  
-   
-  
-  </form>
+  </div>
+ </form>

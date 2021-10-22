@@ -5,6 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewSkillComponent } from './new-skill/new-skill.component';
+import{MatIconModule} from "@angular/material/icon";
+import{MatButtonModule} from "@angular/material/button";
+import { AngularFileUploaderModule } from "angular-file-uploader";
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +22,10 @@ import { NewSkillComponent } from './new-skill/new-skill.component';
     BrowserModule,
     AppRoutingModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

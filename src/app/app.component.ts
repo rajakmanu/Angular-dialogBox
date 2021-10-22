@@ -16,4 +16,12 @@ export class AppComponent {
     dialogConfig.disableClose=false;
     this.dialog.open(NewSkillComponent,dialogConfig);  //open method takes 2 parameters->component and optional configuration
   }
+  afuConfig = {
+    uploadAPI: {
+      url:"https://slack.com/api/files.upload", 
+    }
+  }
+    onFileSelected(event:any){
+      console.log(event);
+    }
 }
